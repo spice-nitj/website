@@ -85,6 +85,12 @@ footer {
     }
 }
 
+.TeamMembers ul li img{
+    width: min(200px, 90%);
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
 .TeamMembers ul li p{
     font-size: 0.8rem;
 }
