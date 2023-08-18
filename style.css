@@ -1,0 +1,90 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+section,
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.main_width{
+    width: min(120ch, calc(100% - 20px));
+}
+
+h1 {
+    font-weight:600;
+    font-size: 2rem;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 600;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+}
+
+.LandingPage {
+    height: 100vh;
+    background-color: #00000055;
+}
+
+.LandingPage h3 {
+    font-weight: 400;
+}
+
+.RecentEvents ul{
+    border: 1px solid blueviolet;
+    list-style-type: none;
+    display: flex;
+    gap: 4px;
+    padding: 2px;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+}
+
+.RecentEvents ul li{
+    display: block;
+    border: 1px solid black;
+    width: 50ch;
+    padding: 5px;
+}
+
+.TeamMembers ul{
+    list-style-type: none;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.TeamMembers ul li{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2px;
+    width: calc((100%/3) - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: calc(1080px)) {
+    .TeamMembers ul li{
+        width: calc(20% - 10px);
+    }
+}
+
+@media (max-width: calc(680px)) {
+    .TeamMembers ul li{
+        width: calc(50% - 10px);
+    }
+}
+
+.TeamMembers ul li p{
+    font-size: 0.8rem;
+}
