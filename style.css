@@ -1,3 +1,11 @@
+:root{
+    --color1: #352F44;
+    --color2: #5C5470;
+    --color3: #B9B4C7;
+    --color4: #FAF0E6;
+}
+
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -125,7 +133,17 @@ footer .bottom {
 .LandingPage {
     height: 100vh;
 
-    background-image: url(ASSETS/Stock/3.jpg);
+    background-image: url(ASSETS/Stock/1.jpg);
+    background-size: cover;
+}
+
+.LandingPage .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000DF;
 }
 
 .LandingPage .LandingContent {
@@ -134,6 +152,7 @@ footer .bottom {
     top: 60vh;
     width: fit-content;
     height: fit-content;
+    color: white;
 }
 
 .LandingPage h3 {
