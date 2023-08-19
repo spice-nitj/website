@@ -162,7 +162,7 @@ footer .bottom {
     position: relative;
     z-index: 1;
     top: 60vh;
-    width: fit-content;
+    max-width: 540px;
     height: fit-content;
     color: white;
 }
