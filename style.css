@@ -18,8 +18,9 @@ section{
 }
 
 .main_width{
-    width: min(120ch, calc(100% - 20px));
+    width: min(120ch, calc(100% - 60px));
 }
+
 
 h1 {
     font-weight:600;
@@ -145,6 +146,17 @@ footer .bottom {
     width: 100%;
     background: #000000DF;
 }
+
+.LandingPage .main_width {
+    width: min(120ch, calc(100% - 120px));
+}
+
+@media (max-width: 680px) {
+    .LandingPage .main_width {
+        width: min(120ch, calc(100% - 60px));
+    }
+}
+
 
 .LandingPage .LandingContent {
     position: relative;
