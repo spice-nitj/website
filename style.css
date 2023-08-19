@@ -4,8 +4,7 @@
     padding: 0px;
 }
 
-section,
-footer{
+section{
     display: flex;
     justify-content: center;
 }
@@ -25,19 +24,125 @@ h4 {
     font-weight: 600;
 }
 
+header {
+    display: flex;
+    width: calc(100% - 24px);
+    background-color: white;
+    position:fixed;
+    padding: 7px 12px;
+    box-shadow: 0px 0px 7px black;
+    z-index: 1000;
+}
+
+header > div {
+    width: fit-content;
+}
+
+header div {
+
+    display: flex;
+    align-items: center;
+}
+
+header .left {
+    gap: 10px;
+}
+
+
+header .left .img {
+    height: fit-content;
+}
+
+header .left .img img {
+    width: 8ch;
+}
+
+header .left .text1 {
+    height: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .left .text2 {
+    height: fit-content;
+    font-size: 2rem;
+}
+
+header .left .text2 span{
+    font-weight: 600;
+}
+
+
+@media (max-width: 680px) {
+    header .left .text1 {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 681px) {
+    header .left .text2 {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+
+
+
 footer {
+    display: flex;
+    justify-content: center;
     background-color: darkblue;
     color: white;
 }
 
+footer div {
+    border: 1px solid red;
+    padding: 3px;
+    margin: 3px;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .top .left img {
+    width: 15ch;
+}
+
+footer .bottom {
+    font-size: 0.8rem;
+}
+
 .LandingPage {
     height: 100vh;
-    background-color: #00000055;
+
+    background-image: url(ASSETS/Stock/3.jpg);
+}
+
+.LandingPage .LandingContent {
+    position: relative;
+    z-index: 1;
+    top: 60vh;
+    width: fit-content;
+    height: fit-content;
 }
 
 .LandingPage h3 {
     font-weight: 400;
 }
+
+
+
+
 
 .RecentEvents ul{
     border: 1px solid blueviolet;
@@ -64,29 +169,28 @@ footer {
 }
 
 .TeamMembers ul li{
-    border: 1px solid black;
     border-radius: 2px;
-    padding: 2px;
+    padding: 5px 2px;
     width: calc((100%/3) - 10px);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-@media (min-width: calc(1080px)) {
+@media (min-width: 1080px) {
     .TeamMembers ul li{
         width: calc(20% - 10px);
     }
 }
 
-@media (max-width: calc(680px)) {
+@media (max-width: 680px) {
     .TeamMembers ul li{
         width: calc(50% - 10px);
     }
 }
 
 .TeamMembers ul li img{
-    width: min(200px, 90%);
+    width: min(170px, 90%);
     aspect-ratio: 1;
     border-radius: 100%;
 }
