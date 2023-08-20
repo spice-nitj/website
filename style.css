@@ -1,5 +1,5 @@
 :root{
-    --color1: #352F44;
+    --color1: #141E46;
     --color2: #5C5470;
     --color3: #B9B4C7;
     --color4: #FAF0E6;
@@ -32,6 +32,8 @@ h3,
 h4 {
     font-weight: 600;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -103,24 +105,28 @@ header .left .text2 span{
 }
 
 
-
+/* FOOTER */
 
 footer {
     display: flex;
     justify-content: center;
-    background-color: darkblue;
+    background-color: var(--color1);
     color: white;
 }
 
-footer div {
-    border: 1px solid red;
-    padding: 3px;
-    margin: 3px;
+footer div div {
+    margin-block: 7px;
 }
+
 
 footer .top {
     display: flex;
     justify-content: space-between;
+}
+
+footer .top .left {
+    display: flex;
+    padding: 5px;
 }
 
 footer .top .left img {
@@ -130,6 +136,34 @@ footer .top .left img {
 footer .bottom {
     font-size: 0.8rem;
 }
+
+footer .top .right ul{
+    list-style-type: none;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+}
+
+footer .top .right ul li{
+    display: flex;
+}
+
+footer .top .right ul li a{
+    padding: 7px;
+    display: flex;
+    border-radius: 100%;
+}
+
+footer .top .right ul li a:hover{
+    background-color: #FFFFFF22;
+}
+
+footer .top .right ul li img{
+    height: 2.2rem;
+}
+
+/* Landing Page */
 
 .LandingPage {
     height: 100vh;
@@ -157,7 +191,6 @@ footer .bottom {
     }
 }
 
-
 .LandingPage .LandingContent {
     position: relative;
     z-index: 1;
@@ -171,9 +204,21 @@ footer .bottom {
     font-weight: 400;
 }
 
+@media (max-width: 680px) {
+    .LandingPage .LandingContent {
+        top: 20vh;
+    }
 
+    .LandingPage .overlay {
+        height: 60vh;
+    }
 
+    .LandingPage {
+        height: 60vh;
+    }
+}
 
+/* Recent Events */
 
 .RecentEvents ul{
     border: 1px solid blueviolet;
@@ -191,6 +236,8 @@ footer .bottom {
     width: 50ch;
     padding: 5px;
 }
+
+/* Team Members */
 
 .TeamMembers ul{
     list-style-type: none;
@@ -229,3 +276,4 @@ footer .bottom {
 .TeamMembers ul li p{
     font-size: 0.8rem;
 }
+
