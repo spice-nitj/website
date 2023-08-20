@@ -241,6 +241,16 @@ footer .top .right ul li img {
     min-width: 30ch;
     padding: 7px;
     border-radius: 17px;
+    animation: scrollList 20s linear infinite; /* Adjust timing as needed */
+}
+
+@keyframes scrollList {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .RecentEvents ul li img {
