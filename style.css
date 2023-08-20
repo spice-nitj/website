@@ -18,7 +18,7 @@ section {
 }
 
 .main_width {
-    width: min(120ch, calc(100% - 60px));
+    width: min(120ch, calc(100% - 40px));
 }
 
 
@@ -241,7 +241,7 @@ footer .top .right ul li img {
     min-width: 30ch;
     padding: 7px;
     border-radius: 17px;
-    animation: scrollList 20s linear infinite; /* Adjust timing as needed */
+    animation: scrollList 10s linear infinite; 
 }
 
 @keyframes scrollList {
@@ -283,7 +283,7 @@ footer .top .right ul li img {
 /* Team Members */
 
 .TeamMembers ul{
-    list-style-type: none;
+    list-style-ty=pe: none;
     display: flex;
     gap: 4px;
     flex-wrap: wrap;
