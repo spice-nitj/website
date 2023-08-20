@@ -306,6 +306,7 @@ footer .top .right ul li img{
   background-size: 6ch;
 }
 
+.TeamMembers ul li a .overlay:active,
 .TeamMembers ul li a .overlay:hover {
   background-color: #000000A0;
   opacity: 1;
