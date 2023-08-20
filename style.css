@@ -221,15 +221,37 @@ footer .top .right ul li img {
 
 /* Recent Events */
 
+
+
 .RecentEvents ul {
+    list-style-type: none;
     display: flex;
     overflow-x: scroll;
+    scrollbar-width: none; /* Firefox only */
+    gap: 10px;
+    padding: 5px;
 }
 
+.RecentEvents ul::-webkit-scrollbar {
+    display: none;
+  }
+
 .RecentEvents ul li {
-    border: 1px dotted black;
+    outline: 1px solid black;
     min-width: 30ch;
+    padding: 7px;
+    border-radius: 17px;
 }
+
+.RecentEvents ul li img {
+    width: 100%;
+    aspect-ratio: calc(3/2);
+    object-fit: cover;
+    border-radius: 10px;
+
+    outline: 1px solid black;
+}
+
 
 /* .RecentEvents ul{
     border: 1px solid blueviolet;
