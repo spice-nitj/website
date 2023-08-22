@@ -259,7 +259,7 @@ footer .top .right ul li img {
 
 .FacultyAdvisor .FacultyAdvisorContent {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
 .FacultyAdvisor .FacultyAdvisorContent .message,
@@ -270,14 +270,14 @@ footer .top .right ul li img {
 }
 
 .FacultyAdvisor .FacultyAdvisorContent .message {
-    min-height: calc(250px - 6px - 5px - 1rem - 6px - 2px - 8px);
+    min-height: calc(250px - 6px - 10px - 1rem - 6px - 2px - 8px);
 }
 
 
 .FacultyAdvisor .FacultyAdvisorContent .text {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: end;
     
 }
@@ -388,7 +388,7 @@ footer .top .right ul li img {
 .TeamMembers ul li .text{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
 }
 
 @media (min-width: 1080px) {
