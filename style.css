@@ -120,6 +120,7 @@ header .left .text2 span {
 /* FOOTER */
 
 footer {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     background-color: var(--color1);
@@ -377,6 +378,12 @@ footer .top .right ul li img {
     align-items: center;
 }
 
+.TeamMembers ul li .text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 @media (min-width: 1080px) {
     .TeamMembers ul li{
         width: calc(20% - 10px);
@@ -432,3 +439,77 @@ footer .top .right ul li img {
     font-size: 0.8rem;
 }
 
+@media (max-width: 680px) {
+    .TeamMembers ul{
+        gap: 10px;
+        
+    }
+    .TeamMembers ul li{
+        max-height: fit-content;
+        background-color: #9180f055;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-content: center;
+    }
+
+    .TeamMembers ul li > *{
+        margin: 5px;
+    }
+
+    .TeamMembers ul li a {
+        max-height: fit-content;
+
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-content: center;
+    }
+
+    .TeamMembers ul li img{
+        width: 60px;
+        border: 1px solid black;
+    }
+
+    .TeamMembers ul li h4{
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .TeamMembers ul li a .overlay {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 100%;
+        opacity: 0;
+        transition: none;
+        background-image: none;
+      }
+      
+      .TeamMembers ul li a .overlay:active,
+      .TeamMembers ul li a .overlay:hover {
+        background-color: #00000000;
+        opacity: 0;
+      }
+
+
+    .TeamMembers ul li .text{
+        display: flex;
+        flex-direction: column;
+        align-content: left;
+    }
+
+    .TeamMembers ul li .text p {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+}
