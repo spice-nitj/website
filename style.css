@@ -301,6 +301,11 @@ footer .top .right ul li img {
 }
 
 @media (max-width: 680px) {
+    .FacultyAdvisor .FacultyAdvisorContent {
+        display: flex;
+        gap: 0px;
+    }
+    
     .FacultyAdvisor .FacultyAdvisorContent .Pic_FacultyAdvisor {
         visibility: hidden;
         width: 0px;
