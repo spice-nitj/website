@@ -154,7 +154,6 @@ footer .top .right ul {
     display: flex;
     gap: 4px;
     flex-wrap: wrap;
-    overflow-x: scroll;
 }
 
 footer .top .right ul li {
@@ -174,6 +173,21 @@ footer .top .right ul li a:hover {
 footer .top .right ul li img {
     height: 2.2rem;
 }
+
+@media (max-width: 680px) {
+    footer .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer .top .right ul::before{
+        content: "Let's Connect";
+    }
+}
+
+
+
 
 /* Landing Page */
 
@@ -248,6 +262,11 @@ footer .top .right ul li img {
     border-radius: 15px;
 }
 
+.FacultyAdvisor .FacultyAdvisorContent .message {
+    min-height: calc(250px - 6px - 5px - 1rem - 6px - 2px - 8px);
+}
+
+
 .FacultyAdvisor .FacultyAdvisorContent .text {
     display: flex;
     flex-direction: column;
@@ -266,6 +285,18 @@ footer .top .right ul li img {
 
 .FacultyAdvisor .FacultyAdvisorContent .Pic_FacultyAdvisor {
     height: 250px;
+}
+
+@media (max-width: 680px) {
+    .FacultyAdvisor .FacultyAdvisorContent .Pic_FacultyAdvisor {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+
+    }
 }
 
 /* Recent Events */
