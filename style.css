@@ -279,6 +279,7 @@ footer .top .right ul li img {
     flex-direction: column;
     gap: 5px;
     align-items: end;
+    
 }
 
 .FacultyAdvisor .FacultyAdvisorContent .message,
@@ -286,8 +287,13 @@ footer .top .right ul li img {
     padding: 3px 8px;
 }
 
+.FacultyAdvisor .FacultyAdvisorContent .message {
+    background-color: #9180f011;
+}
+
 .FacultyAdvisor .FacultyAdvisorContent .name {
     width: fit-content;
+    background-color: #9180f033;
 }
 
 .FacultyAdvisor .FacultyAdvisorContent .Pic_FacultyAdvisor {
