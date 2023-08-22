@@ -442,11 +442,10 @@ footer .top .right ul li img {
 @media (max-width: 680px) {
     .TeamMembers ul{
         gap: 10px;
-        
     }
     .TeamMembers ul li{
         max-height: fit-content;
-        background-color: #9180f055;
+        background-color: #9180f033;
         border-radius: 15px;
         display: flex;
         flex-direction: row;
