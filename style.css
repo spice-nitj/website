@@ -181,7 +181,12 @@ footer .top .right ul li img {
         justify-content: space-between;
     }
 
-    footer .top .right ul::before{
+    footer .top .right ul li{
+        border: 1px solid #FFFFFF22;
+        border-radius: 100%;
+    }
+
+    footer .top .right::before{
         content: "Let's Connect";
     }
 }
@@ -351,25 +356,6 @@ footer .top .right ul li img {
 
     outline: 1px solid black;
 }
-
-
-/* .RecentEvents ul{
-    border: 1px solid blueviolet;
-    list-style-type: none;
-    display: flex;
-    gap: 4px;
-    padding: 2px;
-    flex-wrap: wrap;
-    overflow-x: scroll;
-}
-
-.RecentEvents ul li{
-    display: block;
-    border: 1px solid black;
-    width: 50ch;
-    padding: 5px;
-} */
-
 
 
 
